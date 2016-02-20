@@ -47,7 +47,7 @@
         style="@style/AppButton"
         android:text="@string/app_6_button"
         android:onClick="launchApp6"
-        android:background="@android:color/holo_red_dark"
+        android:background="@color/capstone_button_background"
         android:textColor="@android:color/white"/>
 
 </LinearLayout>
