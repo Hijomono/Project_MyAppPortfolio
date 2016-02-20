@@ -17,7 +17,15 @@
         android:textSize="22sp"
         android:layout_marginBottom="20dp"
         android:textColor="@android:color/black"/>
-    
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
     <Button
         style="@style/AppButton"
         android:text="@string/app_1_button"
@@ -49,5 +57,6 @@
         android:onClick="launchApp6"
         android:background="@color/capstone_button_background"
         android:textColor="@android:color/white"/>
-
+</LinearLayout>
+</ScrollView>
 </LinearLayout>
