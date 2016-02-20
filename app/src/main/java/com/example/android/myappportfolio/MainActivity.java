@@ -39,6 +39,12 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    //Each one of the following 6 methods is connected to one of the buttons in activity_main.xml,
+    //they all start displaying a toast but their code will be updated as the apps they should
+    //initialize are finished.
+    //The stopping previous toast idea was taken from a comment made by hilfritz_13797270122 in
+    //https://discussions.udacity.com/t/toast-function-for-each-button/20868/4
+
     public void launchApp1(View view){
         if(noAppYetToast !=null){
             noAppYetToast.cancel();
