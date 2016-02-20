@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+    private Toast noAppYetToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,33 +40,51 @@ public class MainActivity extends Activity {
     }
 
     public void launchApp1(View view){
-        Toast.makeText(MainActivity.this,
-                R.string.app_1_toast, Toast.LENGTH_SHORT).show();
+        if(noAppYetToast !=null){
+            noAppYetToast.cancel();
+        }
+        noAppYetToast = Toast.makeText(MainActivity.this, R.string.app_1_toast, Toast.LENGTH_SHORT);
+        noAppYetToast.show();
     }
 
     public void launchApp2(View view){
-        Toast.makeText(MainActivity.this,
-                R.string.app_2_toast, Toast.LENGTH_SHORT).show();
+        if(noAppYetToast !=null){
+            noAppYetToast.cancel();
+        }
+        noAppYetToast = Toast.makeText(MainActivity.this, R.string.app_2_toast, Toast.LENGTH_SHORT);
+        noAppYetToast.show();
     }
 
     public void launchApp3(View view){
-        Toast.makeText(MainActivity.this,
-                R.string.app_3_toast, Toast.LENGTH_SHORT).show();
+        if(noAppYetToast !=null){
+            noAppYetToast.cancel();
+        }
+        noAppYetToast = Toast.makeText(MainActivity.this, R.string.app_3_toast, Toast.LENGTH_SHORT);
+        noAppYetToast.show();
     }
 
     public void launchApp4(View view){
-        Toast.makeText(MainActivity.this,
-                R.string.app_4_toast, Toast.LENGTH_SHORT).show();
+        if(noAppYetToast !=null){
+            noAppYetToast.cancel();
+        }
+        noAppYetToast = Toast.makeText(MainActivity.this, R.string.app_4_toast, Toast.LENGTH_SHORT);
+        noAppYetToast.show();
     }
 
     public void launchApp5(View view){
-        Toast.makeText(MainActivity.this,
-                R.string.app_5_toast, Toast.LENGTH_SHORT).show();
+        if(noAppYetToast !=null){
+            noAppYetToast.cancel();
+        }
+        noAppYetToast = Toast.makeText(MainActivity.this, R.string.app_5_toast, Toast.LENGTH_SHORT);
+        noAppYetToast.show();
     }
 
     public void launchApp6(View view){
-        Toast.makeText(MainActivity.this,
-                R.string.app_6_toast, Toast.LENGTH_SHORT).show();
+        if(noAppYetToast !=null){
+            noAppYetToast.cancel();
+        }
+        noAppYetToast = Toast.makeText(MainActivity.this, R.string.app_6_toast, Toast.LENGTH_SHORT);
+        noAppYetToast.show();
     }
 
 }
